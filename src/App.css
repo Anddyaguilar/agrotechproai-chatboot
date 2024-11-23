@@ -1,6 +1,7 @@
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+ 
 }
 
 .chatbox {
@@ -10,21 +11,33 @@
   overflow-y: auto;
   background-color: #f9f9f9;
 }
+h1{
+  color: green;
+font-family: arial;
+}
 
+samp{
+  color:#BAAA00;
+  font-family: arial;
+}
 .message {
   margin-bottom: 10px;
 }
 
 .message.user {
+ font-family: arial ;
   text-align: right;
+  color: green;
+  font-size: 20px;
 }
 
 .message.ai {
+  font-family:arial;
   text-align: left;
 }
 
 .ai-response strong {
-  color: #007bff;
+  color: #0f0f0f;
 }
 
 .ai-response em {
@@ -32,7 +45,19 @@
 }
 
 input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-top: 10px;
+  width:90%;
+ padding: 7px;
+ margin-top: 8px;
+ height: auto;
+ border-radius: 15px;
+ border: 1px solid black;
+}
+button{
+  margin-left: 5px;
+  padding: 6px;
+  border-radius: 15px;
+  color: #f9f9f9;
+  background-color: green;
+  border: 4px solid green;
+
 }

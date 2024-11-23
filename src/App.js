@@ -31,15 +31,15 @@ function App() {
 
     return (
         <div className="container" style={{ padding: '20px' }}>
-            <h1>Chatbot</h1>
+            <h1>informatec<samp>proAI</samp></h1>
             <div className="chatbox">
                 {chatHistory.map((chat, index) => (
                     <div key={index} className={`message ${chat.sender}`}>
                         {chat.sender === 'user' ? (
-                            <p><strong>Tú:</strong> {chat.text}</p>
+                            <p> {chat.text}</p>
                         ) : (
                             <div>
-                                <strong>AI:</strong>
+                                
                                 <div
                                     className="ai-response"
                                     dangerouslySetInnerHTML={{ __html: formatAIResponse(chat.text) }}
@@ -49,14 +49,16 @@ function App() {
                     </div>
                 ))}
             </div>
-            <input
+        
+          <input
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Escribe tu mensaje..."
             />
-            <button onClick={handleSendMessage}>Enviar</button>
+         <button onClick={handleSendMessage}>Enviar</button>
+         
         </div>
     );
 }
